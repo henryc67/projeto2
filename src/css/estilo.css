@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: transparent;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;;
+    padding: 10px;
+}
+header{
+    background-color: gold;
+    color: red;
+    text-align: center ;
+    padding: 20px;
+}
+#conteudo{
+    background-color: purple;
+    color:red;
+    text-align: center;
+    padding: 100px;
+    flex: 2;
+}
+#conteudo article{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+aside{
+    background-color:blue;
+    color: red;
+    padding: 20px;
+    flex:2;
+}   
+footer{
+    background-color: black;
+    padding: 40px;
+    color: red
+}
+/* responsividade */
+@media (min-width:700px){
+    #container{
+        flex-direction: column;
+    }
+    #conteudoAside{
+        display: flex;
+        flex-grow: 1;
+    }
+    #conteudo{
+        flex:2
+    }
+    aside{
+        flex: 1;
+    }
+}
